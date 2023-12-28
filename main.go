@@ -41,7 +41,7 @@ func main() {
 	http.HandleFunc("/hello", helloHandler)
 
 	fmt.Printf("Starting server at port 8080\n")
-	err := http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":8090", nil)
 	if err != nil {
 		log.Fatal(err)
 	}
